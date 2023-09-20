@@ -2,7 +2,6 @@
 Smart India Hackathon
 - Team Justice League
 
-GitHub issues GitHub stars GitHub contributors adam-pw
 Nyaaya is a Web-Application for all lawyers related processes
 
 The key features:
