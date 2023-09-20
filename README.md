@@ -21,8 +21,6 @@ Lawyer Side 👨‍🎓:
 
 Various categories to choose from such as family,crimes etc
 
-ChatBot functionality enabled for fast resolution of doubts
-
 Easy to find and navigate Scheduled Appointments 
 
 
@@ -30,7 +28,7 @@ Admin-side👨‍💻:
 
 Schedule appointments as per the need 
 
-
+ChatBot functionality enabled for fast resolution of doubts
 
 
 
