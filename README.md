@@ -30,6 +30,14 @@ Schedule appointments as per the need
 
 ChatBot functionality enabled for fast resolution of doubts
 
+👩‍💻 Team members
+Shaunak Raiker
+Adesh Sawant 
+Aaryan Apte
+Sailie Ghole
+Khushi Balia
+Raghav Agarwal
+
 
 
 
