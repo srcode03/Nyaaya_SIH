@@ -28,12 +28,13 @@ def signup():
     language=request.json["language"]
     fees=request.json["fees"]
     reviews=request.json["reviews"]
+    profurl=request.json["profurl"]
     existing_user = admin.find_one({"email": email})
     if existing_user:
         return jsonify({"success":False,"msg": "User already exists!Login Instead"}), 400
     hashed_password = bcrypt.generate_password_hash(password).decode("utf-8")
     id = admin.insert_one(
-        {"name": name, "email": email, "password": hashed_password,"age":age,"gender":gender,"phoneno":phoneno,"role":role,"city":city,"casespec":casespec,"experience":experience,"language":language,"fees":fees,"reviews":reviews,"cases_won":0,"cases_lost":0}
+        {"profurl":profurl,"name": name, "email": email, "password": hashed_password,"age":age,"gender":gender,"phoneno":phoneno,"role":role,"city":city,"casespec":casespec,"experience":experience,"language":language,"fees":fees,"reviews":reviews,"cases_won":0,"cases_lost":0}
     ).inserted_id
     if id:
         token = jwt.encode(
@@ -41,7 +42,7 @@ def signup():
             app.config["SECRET_KEY"],
         )
         response = make_response(
-            jsonify({"success":True,"msg": "User registered successfully","token":token}),
+            jsonify({"success":True,"msg": "User registered successfully","token":token,"name":name}),
             200,
         )
         response.set_cookie(
@@ -56,6 +57,7 @@ def signup():
 
 @app.route("/admin/login", methods=["POST"])
 def login():
+    name=request.json["name"]
     email = request.json["email"]
     password = request.json["password"]
 
@@ -71,7 +73,7 @@ def login():
             app.config["SECRET_KEY"],
         )
         response = make_response(
-            jsonify({"success":True,"msg": "Logged in successfully","token":token}),
+            jsonify({"success":True,"msg": "Logged in successfully","token":token,"name":name}),
             200,
         )
         response.set_cookie(
@@ -193,7 +195,8 @@ def profile():
         )
         email = decoded.get("email")
         existing_user = admin.find_one({"email": email})
-        user = {"name": existing_user["name"], "email":existing_user["email"] ,"age":existing_user["age"],"gender":existing_user["gender"],"phoneno":existing_user["phoneno"],"role":existing_user["role"],"city":existing_user["city"],"casespec":existing_user["casespec"],"experience":existing_user["experience"],"language":existing_user["language"],"fees":existing_user["fees"],"reviews":existing_user["reviews"]}
+        id=str(existing_user['_id'])
+        user = {"name": existing_user["name"], "email":existing_user["email"] ,"age":existing_user["age"],"gender":existing_user["gender"],"phoneno":existing_user["phoneno"],"role":existing_user["role"],"city":existing_user["city"],"casespec":existing_user["casespec"],"experience":existing_user["experience"],"language":existing_user["language"],"fees":existing_user["fees"],"reviews":existing_user["reviews"],"cases_won":existing_user["cases_won"],"cases_lost":existing_user["cases_lost"],"id":id}
         return jsonify({"success":True,"user": user, "msg": "User authenticated successfully"})
     except jwt.ExpiredSignatureError:
         return jsonify({"success":False,"msg": "Token has expired"}), 401

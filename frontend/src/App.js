@@ -1,16 +1,17 @@
 import React from 'react';
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { LoginPage, Profile } from "./Routes.js";
+import { LoginPage } from "./Routes.js";
 import { HomePage } from "./Routes.js";
 import { SignupPage } from "./Routes.js";
-import {LawyerSignup} from './Routes.js'
-import { LawyerLogin } from './Routes.js';
-import { Appointment } from './Routes.js';
+import { ProductsPage } from "./Routes.js";
+import { ProfilePage } from "./Routes.js";
+import {FAQPage } from "./Routes.js";
+import {ShopCreatePage} from "./Routes.js"
+import ShopLogin from '../src/components/Shop/ShopLogin.jsx'
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import LawyerProfile from './components/Profile/LawyerProfile';
-
+import LawyerProfilePage from './pages/LawyerProfilePage'
 const App = () => {
   return (
     <BrowserRouter>
@@ -18,13 +19,12 @@ const App = () => {
       <Route path='/' element={<HomePage/>} />
       <Route path='/login' element={<LoginPage/>} />
       <Route path='/signup' element={<SignupPage/>} />
-      <Route path='/admin/signup' element={<LawyerSignup/>} />
-      <Route path='/admin/login' element={<LawyerLogin/>} />
-      <Route path='/admin/me' element={<Profile/>} />
-      <Route path='/admin/profile/:id' element={<LawyerProfile/>} />
-      <Route path='/admin/profile/appointment/:id' element={<Appointment/>} />
-      
-
+      <Route path='/products' element={<ProductsPage/>} />
+      <Route path='/faq' element={<FAQPage/>}/>
+      <Route path='/profile' element={<ProfilePage/>}/>
+      <Route path='/admin/signup' element={<ShopCreatePage/>}/>
+      <Route path='/admin/login' element={<ShopLogin/>}/>
+      <Route path='/admin/me' element={<LawyerProfilePage/>}/>
     </Routes>
     <ToastContainer
         position="bottom-center"

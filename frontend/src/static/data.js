@@ -10,7 +10,7 @@ export const navItems = [
     },
     {
       title: "Legal Providers",
-      url: "/Legal Providers",
+      url: "/products",
     },
     {
       title: "Events",
@@ -271,11 +271,11 @@ export const navItems = [
       image_Url: [
         {
           public_id: "test",
-          url: "https://i.pinimg.com/originals/0c/71/4c/0c714c58a746f939ceebff0f6b4a8260.png",
+          url: "https://lawrato.com/expert_images/thumb/webp/advocate-sunita-bafna.webp",
         },
         {
           public_id: "test",
-          url: "https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png",
+          url: "https://lawrato.com/expert_images/thumb/webp/advocate-sunita-bafna.webp",
         },
       ],
       shop: {
@@ -286,8 +286,7 @@ export const navItems = [
         },
         ratings: 4.2,
       },
-      price: 1099,
-      discount_price: 1049,
+      price: 15000,
       rating: 4,
       total_sell: 75,
       stock: 10,
@@ -314,9 +313,9 @@ export const navItems = [
           public_id: "test",
           url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
         },
-        ratings: 4.2,
+        ratings: 4.5,
       },
-      discount_price: 1099,
+      price: 17000,
       rating: 5,
       total_sell: 80,
       stock: 10,
@@ -344,10 +343,9 @@ export const navItems = [
           public_id: "test",
           url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
         },
-        ratings: 4.2,
+        ratings: 4,
       },
-      price: 1099,
-      discount_price: 1049,
+      price: 11000,
       rating: 4,
       total_sell: 35,
       stock: 10,
@@ -375,11 +373,10 @@ export const navItems = [
           public_id: "test",
           url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
         },
-        ratings: 4.2,
+        ratings: 5,
       category:"Property"
       },
-      price: 100,
-      discount_price: 79,
+      price: 15000,
       rating: 4,
       total_sell: 12,
       stock: 10,
@@ -406,10 +403,9 @@ export const navItems = [
           public_id: "test",
           url: "https://www.hatchwise.com/wp-content/uploads/2022/05/amazon-logo-1024x683.png",
         },
-        ratings: 4.2,
+        ratings: 4.7,
       },
-      price: 120,
-      discount_price: 89,
+      price: 12000,
       rating: 5,
       total_sell: 49,
       stock: 10,
@@ -438,8 +434,7 @@ export const navItems = [
         },
         ratings: 4.2,
       },
-      price: 300,
-      discount_price: 239,
+      price: 30000,
       rating: 4.5,
       reviews: [
         {
@@ -456,7 +451,7 @@ export const navItems = [
     },
     {
       id: 4,
-      name: "Advocate Ramya Kunapareddy, Practice areas: Corporate",
+      name: "Advocate Ramya Reddy, Practice areas: Corporate",
       description:
         "Ramya is a corporate and litigation lawyer with versatile experience into handling contract documentation, legal advisory and litigation for companies in varied sectors and businesses ranging from Banking and Finance, Information Technology and Media, Healthcare and Pharmaceutical, e-Commerce including for start-ups operations..",
       image_Url: [
@@ -477,8 +472,7 @@ export const navItems = [
         },
         ratings: 4.2,
       },
-      price: 100,
-      discount_price: 79,
+      price: 10000,
       rating: 4,
       total_sell: 62,
       stock: 10,
@@ -506,8 +500,7 @@ export const navItems = [
         },
         ratings: 4.2,
       },
-      price: 300,
-      discount_price: 239,
+      price: 30000,
       rating: 4.5,
       reviews: [
         {
@@ -545,7 +538,6 @@ export const navItems = [
         },
         ratings: 4.2,
       },
-      discount_price: 1099,
       rating: 5,
       total_sell: 20,
       stock: 10,
@@ -574,8 +566,7 @@ export const navItems = [
         },
         ratings: 4.2,
       },
-      price: 300,
-      discount_price: 239,
+      price: 30000,
       rating: 4.5,
       reviews: [
         {
