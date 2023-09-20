@@ -12,6 +12,7 @@ import ShopLogin from '../src/components/Shop/ShopLogin.jsx'
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import LawyerProfilePage from './pages/LawyerProfilePage'
+import Events from './pages/Events';
 const App = () => {
   return (
     <BrowserRouter>
@@ -25,6 +26,7 @@ const App = () => {
       <Route path='/admin/signup' element={<ShopCreatePage/>}/>
       <Route path='/admin/login' element={<ShopLogin/>}/>
       <Route path='/admin/me' element={<LawyerProfilePage/>}/>
+      <Route path='/events' element={<Events/>}/>
     </Routes>
     <ToastContainer
         position="bottom-center"

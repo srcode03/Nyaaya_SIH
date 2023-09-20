@@ -86,6 +86,7 @@ const Header = ({ activeHeading }) => {
               </div>
             ) : null}
             </div>
+            <button></button>
             <div className={`${styles.button}`}>
             <Link to="/admin/signup">
               <h1 className="text-[#fff] flex items-center text-sm">
