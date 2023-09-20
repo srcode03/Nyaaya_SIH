@@ -30,6 +30,11 @@ Schedule appointments as per the need
 
 ChatBot functionality enabled for fast resolution of doubts
 
+🤖 Technology Stack
+Frontend:-JavaScript,HTML5,TailwindCSS,React,Python
+
+Backend:- MongoDB,Flask,OpenCV
+
 👩‍💻 Team members
 
 Shaunak Raiker
