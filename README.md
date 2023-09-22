@@ -1,7 +1,7 @@
 # Nyaya-SIH-23
 Smart India Hackathon: **Team Justice League**
 
-**Nyaya** is a Web-Application for that connects legal service seekers with legal professionals.
+**Nyaya** is a (Web+App)-Application for that connects legal service seekers with legal professionals.
 
 ## Key features:
 Incentivizing legal service providers to join the platform, enhancing user experience through
