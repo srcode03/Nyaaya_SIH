@@ -40,13 +40,30 @@ FAQ
 
 ![WhatsApp Image 2023-09-22 at 1 24 11 PM](https://github.com/Khushi-Balia/Nyaaya_SIH/assets/104241344/3b893eda-f194-46df-b014-b0443f8d3547)
 
-Profile Page
+
+Usr Profile Page
 
 ![WhatsApp Image 2023-09-22 at 1 18 40 PM](https://github.com/Khushi-Balia/Nyaaya_SIH/assets/104241344/96dbb31a-e813-4c38-a971-23f012bbb120)
 
 Appointments confirmed
 
 ![WhatsApp Image 2023-09-22 at 1 18 40 PM(1)](https://github.com/Khushi-Balia/Nyaaya_SIH/assets/104241344/71512fb2-5f84-4bf1-8583-276353f0a726)
+
+Legal Practioner Signup:
+
+![signup](https://github.com/srcode03/Nyaaya_SIH/assets/99495910/5e5dd39e-868c-4443-a002-488b67a75925)
+
+Legal Practioner Login:
+
+![login](https://github.com/srcode03/Nyaaya_SIH/assets/99495910/199f14c2-78c7-42ce-87c8-f413b0a3248f)
+
+Legal Practioner Profile:
+
+![profile](https://github.com/srcode03/Nyaaya_SIH/assets/99495910/38832a3b-dce6-4204-a929-2478f1b9a4c7)
+
+Appointments:
+
+![appointments](https://github.com/srcode03/Nyaaya_SIH/assets/99495910/2ea6af68-6930-4544-9634-405535cb6252)
 
 Chatbot
 
